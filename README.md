@@ -1,5 +1,10 @@
 # Web-automation-demoqa
 
+
+Task done by: Kārlis Šermuksītis 3ITB
+
+
+
 ## 1. Requirements
 ### 1.1. Mandatory
 * Java 8
