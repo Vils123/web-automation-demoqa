@@ -169,6 +169,12 @@ public class DemoQASteps {
       case "not visible":
         stateTrue = !getCurrentPage().getElement(snakify(elementName)).isVisible();
         break;
+      case "selected":
+        stateTrue = getCurrentPage().getElement(snakify(elementName)).hasClass("active");
+        break;
+      case "not selected":
+        stateTrue = !getCurrentPage().getElement(snakify(elementName)).hasClass("active");
+        break;
       default: fail("The given state is undefined: " + state);
     }
     if(!stateTrue) fail("Expected " + snakify(elementName) + " to be " + state);
